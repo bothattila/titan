@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Titan.Living;
+using Titan.Utils;
 
 namespace Titan
 {
@@ -59,6 +61,12 @@ namespace Titan
             myHumanGroup[1].Learning = myHumanGroup[1].Learning + ((myHumanGroup[1].Learning / 100) * 5);
             Console.WriteLine("Learning skill level: " + myHumanGroup[1].Learning.ToString());
 
+
+            Console.WriteLine("***");
+            Console.WriteLine("***");
+            string path = Directory.GetCurrentDirectory();
+            Console.WriteLine("The current directory is {0}", path);
+            IOUtils.ReadTxtFile();
             // Console.WriteLine("Hello");
             Console.ReadKey();
         }
