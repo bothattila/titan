@@ -12,10 +12,21 @@ namespace Titan.Utils
             { "Feri", "Pista", "Janos", "Jozsef", "Imre", "Géza", "Gyula", "Botond",
             "Csirifiszkió", "Sebestyén", "Péter", "Attila", "Béla" };
 
+        private static string[] nevekFilebol = IOUtils.ReadSpecificTxtFileToArray("common", "forenames.txt");
         public static string randomVezeteknev()
         {
             int valasztottRandomSzam = StaticRandom.Instance.Next(vezetekNevArray.Length);
             return vezetekNevArray[valasztottRandomSzam];
+
+            
+        }
+
+        public static string randomVezeteknevFilebol()
+        {
+            int valasztottRandomSzam = StaticRandom.Instance.Next(nevekFilebol.Length);
+            return nevekFilebol[valasztottRandomSzam];
+
+
         }
     }
 }

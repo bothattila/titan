@@ -24,7 +24,7 @@ namespace Titan.Living
 
         public Humanoid()
         {
-            Name = MathUtils.randomVezeteknev();
+            Name = MathUtils.randomVezeteknevFilebol();
 
             Health = 10;
 

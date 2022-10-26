@@ -32,7 +32,7 @@ namespace Titan
             Console.WriteLine("***");
 
 
-            int humansToCreate = 2;
+            int humansToCreate = 40;
             Humanoid[] myHumanGroup = new Humanoid[humansToCreate];
             for (int i = 0; i < humansToCreate; i++)
             {
