@@ -74,7 +74,7 @@ namespace Titan.Utils
 
             string path = Directory.GetCurrentDirectory();
             string backslash = @"\";
-            foreach (var line in GetFileLines(path + backslash + "common" + backslash + "forenames.txt")) Console.WriteLine(line);
+            //foreach (var line in GetFileLines(path + backslash + "common" + backslash + "forenames.txt")) Console.WriteLine(line);
             // Get lines as list.
             var lines = GetFileLines(path + backslash + "common" + backslash + "forenames.txt").ToList();
 
@@ -118,7 +118,7 @@ namespace Titan.Utils
 
             string path = Directory.GetCurrentDirectory();
             string backslash = @"\";
-            foreach (var line in GetFileLines(path + backslash + folder + backslash + filename)) Console.WriteLine(line);
+            //foreach (var line in GetFileLines(path + backslash + folder + backslash + filename)) Console.WriteLine(line);
             // Get lines as list.
             var lines = GetFileLines(path + backslash + folder + backslash + filename).ToList();
 

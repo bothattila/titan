@@ -23,8 +23,9 @@ namespace Titan.Utils
 
         public static string randomVezeteknevFilebol()
         {
-            int valasztottRandomSzam = StaticRandom.Instance.Next(nevekFilebol.Length);
-            return nevekFilebol[valasztottRandomSzam];
+            string[] nevz = IOUtils.ReadSpecificTxtFileToArray("common", "forenames.txt");
+            int valasztottRandomSzam = StaticRandom.Instance.Next(nevz.Length);
+            return nevz[valasztottRandomSzam];
 
 
         }
